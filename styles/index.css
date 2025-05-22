@@ -46,12 +46,15 @@ nav ul li a {
 }
 
 .hero {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background: url('/images/pic14.jpg') no-repeat center center/cover;
 }
 
 .overlay {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
@@ -61,26 +64,55 @@ nav ul li a {
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  z-index: 2;
-  max-width: 700px;
   margin: 0 auto;
   padding-top: 200px;
   text-align: center;
+  
 }
 
 .hero-content p {
   letter-spacing: 2px;
   font-size: 14px;
   color: #ccc;
+  margin-left: -30rem;
+  /* padding: auto; */
+  /* margin-top: auto; */
+  
 }
 
 .hero-content h1 {
   font-size: 48px;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 20px 0; 
   line-height: 1.2;
+  margin-left: -34rem;
+  
 }
+ .motion {
+    animation: typing 6s steps(10) infinite;
+    /* border-right: 2px solid white; */
+    /* margin-left: -10rem; */
+    text-align: left;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    /* margin-top: 1rem; */
+    /* padding-top: -1000px; */
+}
+
+/* @keyframes typing {
+    0%{
+        width: 0ch;
+    }
+     50%{
+        width: 20ch;
+    } 
+    100% {
+        width: 0ch;
+    } 
+}   */
 
 .btn {
   display: inline-block;
@@ -92,10 +124,15 @@ nav ul li a {
   border-radius: 4px;
   font-weight: bold;
   transition: background 0.3s ease;
+  height: 10%;
+
+  
+
 }
 
 .btn:hover {
   background-color: #0056b3;
+  
 }
 
 .slider-indicator {
@@ -103,8 +140,9 @@ nav ul li a {
   font-size: 14px;
   letter-spacing: 5px;
   color: #aaa;
-  margin-left: 40px;
-  margin-top: 40px;
+  
+  
+  
 }
 .services {
   background-color: #0e0627;
